@@ -15,7 +15,7 @@ public class EmailController {
 
     @PostMapping(path = "/send")
     public ResponseEntity<Void> sendEmail(){
-        emailService.sendSimpleMessage("Job-description@dstech.it", "prova", "funciona");
+        emailService.sendSimpleMessage("ciao@gmail.com", "prova", "funciona");
         return ResponseEntity.ok().build();
     }
 }
